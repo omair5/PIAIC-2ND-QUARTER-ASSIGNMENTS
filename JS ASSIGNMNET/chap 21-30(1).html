@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JS ASSIGNMENT</title>
+</head>
+
+<body>
+
+    <script>
+
+        user_input = prompt("please enter your value in decimal", "like 3.4");
+        upper_case = Math.ceil(user_input)
+        console.log(upper_case)
+
+        my_string = "hello everyone we are learning javascript"
+
+        splitting = my_string.split(" ")
+        // console.log(splitting)
+        slicing = splitting.slice(0, upper_case)
+        // console.log(slicing)
+
+        reverse_string = ""
+
+        for (var i = 0; i < slicing.length; i++) {
+            outer = slicing[i]
+            for (j = outer.length - 1; j >= 0; j--) {
+                inner = outer[j]
+                reverse_string += inner
+
+            }
+
+        }
+        console.log(reverse_string)
+
+
+                                        // WITH BUILT IN REVERSE AND JOIN METHOD 
+
+
+
+// my_string="hello"
+
+// spliting=my_string.split("")
+// console.log(spliting)
+
+// reversing=spliting.reverse().join("")
+// console.log(reversing)
+
+    </script>
+</body>
+
+</html>

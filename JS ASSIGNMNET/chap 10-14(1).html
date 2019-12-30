@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JS ASSIGNMENT</title>
+</head>
+
+<body>
+    <script>
+                                        // WITH IF ELSE LOGIC
+
+        user_input1 = +prompt("enter first number");
+        user_input2 = +prompt("enter second number");
+        operator = prompt("enter the operation you want to perform", "+,-,*,/");
+        my_func(user_input1, user_input2, operator)
+
+
+        function my_func(user_input1, user_input2, operator) {
+            if (operator === '+') {
+                addition = (user_input1 + user_input2);
+                alert(user_input1 + "+" + user_input2 + "=" + addition)
+            }
+            else if (operator === '-') {
+                subtraction = (user_input1 - user_input2);
+                alert(user_input1 + "-" + user_input2 + "=" + subtraction)
+            }
+            else if (operator === '*') {
+                multiplication = (user_input1 * user_input2);
+                alert(user_input1 + "*" + user_input2 + "=" + multiplication)
+            }
+            else if (operator === '/') {
+                division = (user_input1 / user_input2);
+                alert(user_input1 + "/" + user_input2 + "=" + division)
+            }
+            else{
+                alert("sorry u have entered wrong operator")
+            }
+        }
+
+
+                                            // WITH SWITCH LOGIC
+
+        // function my_func(user_input1, user_input2, operator) {
+        //     switch (operator) {
+        //         case "+":
+        //             addition = (user_input1 + user_input2);
+        //             alert(user_input1 + "+" + user_input2 + "=" + addition)
+        //             break
+        //         case "-":
+        //             subtraction = (user_input1 - user_input2);
+        //             alert(user_input1 + "-" + user_input2 + "=" + subtraction)
+        //             break
+        //         case "*":
+        //             multiplication = (user_input1 * user_input2);
+        //             alert(user_input1 + "*" + user_input2 + "=" + multiplication)
+        //             break
+        //         case "/":
+        //             division = (user_input1 / user_input2);
+        //             alert(user_input1 + "/" + user_input2 + "=" + division)
+        //             break
+        //         default:
+        //             alert("sorry u have entered wrong operator")
+
+        //     }
+        // }
+
+    </script>
+
+</body>
+
+</html>

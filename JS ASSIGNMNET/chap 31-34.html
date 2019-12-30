@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JS ASSIGNMENT</title>
+</head>
+
+<body>
+
+    <script>
+
+        var name = prompt("please enter your name")
+        var date = prompt("please enter your date")
+        var month = prompt("please enter your month")
+        var year = prompt("please enter your year")
+
+        var my_obj = new Date()
+        var hours = my_obj.getHours()
+
+
+        if (hours >= 0 && hours <= 6) {
+            console.log("hello " + name + "," + " goodnight")
+        }
+        else if (hours > 6 && hours <= 12) {
+            console.log("hello " + name + "," + " morning")
+        }
+        else if (hours > 12 && hours <= 16) {
+            console.log("hello " + name + "," + " afternoon")
+        }
+        else if (hours > 16 && hours <= 19) {
+            console.log("hello " + name + "," + " evening")
+        }
+        else if (hours > 19 && hours <= 24) {
+            console.log("hello " + name + "," + " goodnight")
+        }
+
+
+        your_dob = new Date(month + " " + date + "," + year)
+        console.log(your_dob)
+
+
+        //   YEARS
+        till_now = my_obj.getTime()
+        till_dob = your_dob.getTime()
+        total_miliseconds = till_now - till_dob
+        console.log(total_miliseconds)
+        miliseconds = total_miliseconds / 3.154e+10
+        your_years = Math.floor(miliseconds)
+        console.log(your_years)
+        total_months = total_miliseconds / 2.628e+9
+        console.log(total_months)
+
+
+
+        //   MONTHS
+        for_months = miliseconds - your_years
+        getting_months = for_months * 12
+        your_months = Math.floor(getting_months)
+
+
+
+
+        //   DAYS
+        for_days = getting_months - your_months
+        console.log(for_days)
+        getting_days = for_days * 30
+        console.log(getting_days)
+        your_days = Math.floor(getting_days)
+        console.log(your_days)
+
+
+        //   HOURS
+        for_hours = getting_days - your_days
+        getting_hours = for_hours * 24
+        your_hours = Math.floor(getting_hours)
+
+
+        var message1 = "YOU ARE " + your_years + " YEARS " + your_months + " MONTHS " + your_days + " DAYS " + your_hours + " HOURS OLD"
+        alert(message1)
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link href="form.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+<body>
+
+    <div id="main-div">
+
+        <div class=heading-para>
+            <h1>CREATE ACCOUNT</h1>
+            <p>Get started with your free account</p>
+        </div>
+
+        <!-- ICONS -->
+        <div class=icons>
+            <p class=twitter-color><i class="fa fa-twitter "></i> Login Via Twitter</p>
+            <p class=facebook-color><i class="fa fa-facebook-f "></i> Login Via Facebook</p>
+        </div>
+        <br>
+
+        <!-- FOR HR LINE -->
+        <div class=style>
+            <p>--- OR ---</p>
+        </div>
+
+        <!-- FORM ELEMENTS -->
+        <form action="https://www.google.com">
+            <div id=form-elements>
+                <div class=input-div>
+                    <i class="fa fa-user"></i>
+                    <input type=text name=name required placeholder="Full Name">
+                </div>
+
+                <div class=input-div>
+                    <i class="fa fa-envelope"></i>
+                    <input type="email" name=email required placeholder="Email Address">
+                </div>
+
+                <div class=input-div>
+                    <i class="fa fa-phone"></i>
+                    <input type="tel" name=number pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required
+                        placeholder="123-35-678">
+                </div>
+
+                <div class=input-div>
+                    <i class="fa fa-briefcase"></i>
+                    <select name=job>
+                        <option value="none">Select Your Job Type</option>
+                        <option value=private>private</option>
+                        <option value=government>government</option>
+                        <option value=semi-government>semi-government</option>
+                    </select>
+                </div>
+
+                <div class=input-div>
+                    <i class="fa fa-lock"></i>
+                    <input type="password" name=password required placeholder="Create Password">
+                </div>
+
+                <p class=terms-para><input type="checkbox" name=checkbox value=yes required> By Clicking This You Are Agreeing To Our Terms &
+                    Conditions.</p>
+
+                <input class=for-submit type="submit" value="submit">
+
+            </div>
+        </form>
+        <!-- ICONS FOR LATER USE -->
+        <!-- <i class="fa fa-user"></i>
+        <i class="fa fa-envelope"></i>
+        <i class="fa fa-phone"></i>
+        <i class="fa fa-briefcase"></i>
+        <i class="fa fa-lock"></i> -->
+
+
+    </div>
+
+
+</body>
+
+
+</html>

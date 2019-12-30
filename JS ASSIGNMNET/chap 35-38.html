@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JS ASSIGNMENT</title>
+</head>
+
+<body>
+
+    <script>
+
+        user_input=+prompt("enter a value for factorial");
+        // FUNCTION CALL
+        my_factorial(user_input)
+
+        // FUNCTION DEFINE
+        function my_factorial(user_input){
+            var factorial=1;
+            for(var i=user_input;i>=1;i--){
+                factorial*=i
+            }
+            console.log("your factorial is "+factorial)
+        }
+
+    </script>
+</body>
+
+</html>

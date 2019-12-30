@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JS ASSIGNMENT</title>
+</head>
+
+<body>
+    <script>
+
+        my_course = []
+        var course_1 = prompt("ENTER YOUR COURSE NAME")
+        var course_2 = prompt("ENTER YOUR COURSE NAME")
+        var course_3 = prompt("ENTER YOUR COURSE NAME")
+        var course_4 = prompt("ENTER YOUR COURSE NAME")
+        var course_5 = prompt("ENTER YOUR COURSE NAME")
+
+
+        my_course.push(course_1, course_2, course_3, course_4, course_5)
+
+        alert(my_course)
+
+        var edit_1 = prompt("DO YOU WANT TO EDIT THIS COURSE", course_1)
+        var edit_2 = prompt("DO YOU WANT TO EDIT THIS COURSE", course_2)
+        var edit_3 = prompt("DO YOU WANT TO EDIT THIS COURSE", course_3)
+        var edit_4 = prompt("DO YOU WANT TO EDIT THIS COURSE", course_4)
+        var edit_5 = prompt("DO YOU WANT TO EDIT THIS COURSE", course_5)
+
+        if (edit_1 !== course_1) {
+            my_course.splice(0, 1, edit_1)
+        }
+        if (edit_2 !== course_2) {
+            my_course.splice(1, 1, edit_2)
+        }
+
+        if (edit_3 !== course_3) {
+            my_course.splice(2, 1, edit_3)
+        }
+
+        if (edit_4 !== course_4) {
+            my_course.splice(3, 1, edit_4)
+        }
+        if (edit_5 !== course_5) {
+            my_course.splice(4, 1, edit_5)
+        }
+        alert(my_course)
+
+    </script>
+</body>
+
+</html>

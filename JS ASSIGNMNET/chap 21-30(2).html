@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JS ASSIGNMENT</title>
+</head>
+
+<body>
+
+    <script>
+
+        var user_input=prompt("please enter your string here")   
+        my_uppercase(user_input)
+
+        function my_uppercase(user_input){
+            var new_string="";
+            var my_split=user_input.split(" ")
+            for(var i=0;i<=my_split.length-1;i++){
+               var my_SLICE= my_split[i].slice(0,1).toUpperCase()
+               var my_slice= my_split[i].slice(1)
+               var final_result=my_SLICE+my_slice;
+               new_string+=final_result+" "
+            }
+            console.log(new_string)
+        }    
+
+    </script>
+</body>
+
+</html>

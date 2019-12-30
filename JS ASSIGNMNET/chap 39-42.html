@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JS ASSIGNMENT</title>
+</head>
+
+<body>
+
+    <script>
+        // INITIALIZE
+        var total_marks = 500;
+        var obtained_marks = 0
+        var obtained_percentage = 0
+        // FUNCTION CALL
+        for_marks_input()
+        for_grading()
+
+        // FUNCTION DEFINE
+        function for_marks_input() {
+            for (var i = 1; i <= 5; i++) {
+                marks_input = +prompt("enter marks of your course" + i);
+                obtained_marks += marks_input
+            }
+            obtained_percentage = obtained_marks * (100 / total_marks)
+            console.log("you have got " + obtained_percentage + "%")
+        }
+
+        function for_grading() {
+            console.log(obtained_percentage)
+            switch (true) {
+                case (obtained_percentage > 0 && obtained_percentage <= 29):
+                    alert("YOU ARE FAIL(GRADE F)");
+                    break;
+                case (obtained_percentage > 29 && obtained_percentage <= 44):
+                    alert("YOU ARE PASS(GRADE D)");
+                    break;
+                case (obtained_percentage > 44 && obtained_percentage <= 60):
+                    alert("YOU ARE PASS(GRADE C)");
+                    break;
+                case (obtained_percentage > 60 && obtained_percentage <= 75):
+                    alert("YOU ARE PASS(GRADE B)");
+                    break;
+                case (obtained_percentage > 75 && obtained_percentage <= 90):
+                    alert("YOU ARE PASS(GRADE A)");
+                    break;
+                case (obtained_percentage > 90 && obtained_percentage <= 100):
+                    alert("YOU ARE PASS(GRADE A+)");
+                    break;
+
+
+            }
+        }
+    </script>
+</body>
+
+</html>
